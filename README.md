@@ -21,5 +21,5 @@ Intalación:
    python manage.py runserver
 
 Acceder a la interfaz:
-http://localhost:8000/dashboard/
+http://localhost:8000/
 
