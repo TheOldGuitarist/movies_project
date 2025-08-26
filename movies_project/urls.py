@@ -21,10 +21,10 @@ urlpatterns = [
     # API REST (JSON + Browsable API)
     path('api/', include(router.urls)),
 
-    # Frontend: dashboard con Directores y Películas en una sola página
+    # Dashboard con Directores y Películas
     path('', views_front.dashboard, name='dashboard'),
 
-    # Acciones desde los modales (editar/eliminar)
+    # Acciones (modals)
     path('directors/edit/<int:id>/', views_front.edit_director, name='edit_director'),
     path('directors/delete/<int:id>/', views_front.delete_director, name='delete_director'),
 
