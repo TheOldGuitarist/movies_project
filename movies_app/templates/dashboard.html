@@ -107,7 +107,7 @@
         <td>{{ m.gender }}</td>
         <td>
           {% if m.duration %}
-            {{ m.duration }}  <!-- timedelta mostrado como HH:MM:SS -->
+            {{ m.duration }}
           {% else %}
             —
           {% endif %}
@@ -137,7 +137,6 @@
                 <input type="text" name="name" value="{{ m.name }}" class="form-control mb-2">
                 <input type="date" name="release_year" value="{{ m.release_year|date:'Y-m-d' }}" class="form-control mb-2">
                 <input type="text" name="gender" value="{{ m.gender }}" class="form-control mb-2">
-                <!-- DurationField como texto HH:MM:SS -->
                 <input type="text" name="duration" value="{{ m.duration }}" class="form-control mb-2" placeholder="HH:MM:SS">
                 <select name="fk_director" class="form-control">
                   {% for d in directors %}
