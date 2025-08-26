@@ -6,18 +6,16 @@ El proyecto implementa:
 3. Interfaz en Bootstrap para gestionar directores y películas.
 
 Intalación:
-1. Clonar la repo:
-   git clone <URL_DEL_REPO>
-   cd movies_project
-3. Crear virtual enviroment
+1. Clonar la repo.
+2. Crear virtual enviroment
    python -m venv env
    env\Scripts\activate
-4. Instalar dependencias:
+3. Instalar dependencias:
    pip install -r requirements.txt
-5. Generar migraciones y aplicar cambios en la BD:
+4. Generar migraciones y aplicar cambios en la BD:
    python manage.py makemigrations
    python manage.py migrate  
-7. Ejecutar el servidor:
+5. Ejecutar el servidor:
    python manage.py runserver
 
 Acceder a la interfaz:
